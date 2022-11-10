@@ -1,0 +1,206 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    background-color: $color-bg-footer;
+  }
+
+  .page-footer__container {
+    position: relative;
+    text-align: center;
+    
+    // outline: 1px dashed teal;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      text-align: start;
+    }
+  }
+  
+  .page-footer__content {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      gap: 70px;
+    }
+  }
+
+
+  .page-footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  
+    color: $color-white-primary;
+    font-style: normal;
+  }
+
+  .address-nav {
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    @extend %list;
+
+    @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    }
+  }
+
+  .address-nav__link {
+    @extend %link;
+    display: inline-block;
+    
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    transition: color 250ms $transition-cubic; 
+    color: $color-text-contacts; 
+
+  //   outline: 1px dotted teal; 
+
+    &--address {
+      color: $color-white-primary;
+      text-decoration: none;
+    }
+  }
+
+  .socials {
+    display: inline-block;
+  
+    width: 206px;
+    height: 80px;
+    // outline: 1px dashed tomato;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+      }
+  }
+
+  .socials__text,
+  .footer-form__text {
+    margin-bottom: 20px;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $color-white-primary;
+
+  }
+
+
+  // * Footer form styles:
+    .footer-form__wrapper {
+    // outline: 1px dashed tomato;
+    width: 100%;
+
+    @media screen and (min-width: 768px) and (max-with: 1199px) {
+      
+      // width: 450px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media screen and (min-width: 1200px) {
+     width: 570px;
+    }
+
+  } 
+  
+.footer-form__text {
+  display: block;
+  width: 100%;
+}
+
+.footer-form {
+  text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+}
+
+.footer-form__field {
+ 
+  padding: 15px 16px;
+  //
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: border-color 250ms $transition-cubic;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: inherit;
+  outline: none;
+
+  &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+    
+      color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+  border-color: $color-accent;
+  color:$color-white-primary;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.footer-form__button {
+@include centeredFlex(inline-flex);
+gap: 10px;
+
+width: 200px;
+height: 50px;
+border-radius: 4px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+
+color: $color-white-primary;
+fill: currentColor;
+background-color: $color-accent;
+border-color: transparent;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+cursor: pointer;
+}
+
+//  End Footer styles.

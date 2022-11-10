@@ -1,0 +1,52 @@
+// * Team styles:
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    background-color: $color-bg-secondary;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+  
+  .team__heading {
+    margin-bottom: 30px;
+  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    color: $color-text-title;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
+  }
+
+  .team__list {
+    @extend %list;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  //! Only for MOBILE! Have to use breakpoint (max-with: $mobile) or smth like that. 
+.team__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+  margin-bottom: 30px;
+  }
+}
+//! 
+  
+  

@@ -1,0 +1,31 @@
+//  * Social-Links Navigation styles:
+.soc-nav {
+    @extend %list;
+    @include centeredFlex;
+    gap: 10px;
+  }
+  
+  .soc-nav__link {
+    @include centeredFlex;
+    @extend %link;
+    transition: background-color 250ms $transition-cubic,
+    fill 250ms $transition-cubic;
+    background-color: $color-white-primary;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $color-icon-gray;
+
+    // outline: 1px dashed teal;
+
+    &:hover,
+    &:focus {
+        background-color: $color-accent;
+        fill: $color-white-primary;
+    }
+
+    &--inverse {
+        background-color:rgba(255, 255, 255, 0.1);
+        fill: $color-white-primary; 
+      }
+  }
