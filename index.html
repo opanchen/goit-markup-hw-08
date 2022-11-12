@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
-    <link
+    /> -->
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -170,52 +170,88 @@
         <div class="container">
           <h2 class="directions__heading">Чим ми займаємося</h2>
           <ul class="directions__list">
+
             <li class="directions__item">
               <div class="directions__thumb">
-                <img
-                  srcset="
-                  ./images/img1.jpg 1x,
-                  ./images/img1@2x.jpg 2x
-                  "
-                  src="./images/img1.jpg"
+                <picture>
+                  <source
+                  srcset="./images/desktop/direction-img/img1.webp 1x,
+                    ./images/desktop/direction-img/img1@2x.webp 2x,
+                    ./images/desktop/direction-img/img1@3x.webp 3x
+                    "
+                  type="image/webp"
+                  >
+                  <source
+                  srcset="./images/desktop/direction-img/img1.jpg 1x,
+                    ./images/desktop/direction-img/img1@2x.jpg 2x,
+                    ./images/desktop/direction-img/img1@3x.jpg 3x
+                    "
+                  >
+
+                  <img
+                  loading="lazy"
+                  src="./images/desktop/direction-img/img1.jpg"
                   alt="Веб-розробка"
-                  width="370"
-                  height="294"
                 />
+                </picture>
                 <div class="directions__overlay">
                   <h3 class="directions__title">Десктопні додатки</h3>
                 </div>
               </div>
+
             </li>
             <li class="directions__item">
               <div class="directions__thumb">
-                <img
-                srcset="
-                  ./images/img2.jpg 1x,
-                  ./images/img2@2x.jpg 2x
-                  "
-                  src="./images/img2.jpg"
+                <picture>
+                  <source
+                  srcset="./images/desktop/direction-img/img2.webp 1x,
+                    ./images/desktop/direction-img/img2@2x.webp 2x,
+                    ./images/desktop/direction-img/img2@3x.webp 3x
+                    "
+                  type="image/webp"
+                  >
+                  <source
+                  srcset="./images/desktop/direction-img/img2.jpg 1x,
+                    ./images/desktop/direction-img/img2@2x.jpg 2x,
+                    ./images/desktop/direction-img/img2@3x.jpg 3x
+                    "
+                  >
+
+                  <img
+                  loading="lazy"
+                  src="./images/desktop/direction-img/img2.jpg"
                   alt="Мобільна розробка"
-                  width="370"
-                  height="294"
                 />
+                </picture>
                 <div class="directions__overlay">
                   <h3 class="directions__title">Мобільні додатки</h3>
                 </div>
               </div>
+
             </li>
             <li class="directions__item">
               <div class="directions__thumb">
-                <img
-                srcset="
-                  ./images/img3.jpg 1x,
-                  ./images/img3@2x.jpg 2x
-                  "
-                  src="./images/img3.jpg"
+                <picture>
+                  <source
+                  srcset="./images/desktop/direction-img/img3.webp 1x,
+                    ./images/desktop/direction-img/img3@2x.webp 2x,
+                    ./images/desktop/direction-img/img3@3x.webp 3x
+                    "
+                  type="image/webp"
+                  >
+                  <source
+                  srcset="./images/desktop/direction-img/img3.jpg 1x,
+                    ./images/desktop/direction-img/img3@2x.jpg 2x,
+                    ./images/desktop/direction-img/img3@3x.jpg 3x
+                    "
+                  >
+
+                  <img
+                  loading="lazy"
+                  src="./images/desktop/direction-img/img3.jpg"
                   alt="Дизайн"
-                  width="370"
-                  height="294"
                 />
+                </picture>
                 <div class="directions__overlay">
                   <h3 class="directions__title">Дизайнерські рішення</h3>
                 </div>
@@ -231,17 +267,63 @@
         <div class="container">
           <h2 class="team__heading">Наша команда</h2>
           <ul class="team__list">
+
             <li class="team__item team-card">
-              <img
-                srcset="
-                ./images/team-card1.jpg 1x,
-                ./images/team-card1@2x.jpg 2x
+              <picture>
+                <source
+                srcset="./images/mobile/team-card/team-card1.webp 1x,
+                  ./images/mobile/team-card/team-card1@2x.webp 2x,
+                  ./images/mobile/team-card/team-card1@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/team-card/team-card1.webp 1x,
+                  ./images/tablet/team-card/team-card1@2x.webp 2x,
+                  ./images/tablet/team-card/team-card1@3x.webp 3x
                 "
-                src="./images/team-card1.jpg"
+                type="image/webp"
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/team-card/team-card1.webp 1x,
+                  ./images/desktop/team-card/team-card1@2x.webp 2x, 
+                  ./images\desktop\team-card\team-card1@3x.webp 3x
+                  "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                >
+
+                <source
+                srcset="./images/mobile/team-card/team-card1.jpg 1x,
+                  ./images/mobile/team-card/team-card1@2x.jpg 2x,
+                  ./images/mobile/team-card/team-card1@3x.jpg 3x
+               "
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/team-card/team-card1.jpg 1x,
+                  ./images/tablet/team-card/team-card1@2x.jpg 2x,
+                  ./images/tablet/team-card/team-card1@3x.jpg 3x
+                "
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/team-card/team-card1.jpg 1x,
+                  ./images/desktop/team-card/team-card1@2x.jpg 2x,
+                  ./images/desktop/team-card/team-card1@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+                >
+               
+                <img
+                loading="lazy"
+                src="./images/desktop/team-card/team-card1.jpg
                 alt="Учасник 1"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
+              </picture>
               <div class="team-card__content">
                 <h3 class="team-card__title">Ігор Дем'яненко</h3>
                 <p class="team-card__descr" lang="en">Product Designer</p>
@@ -283,17 +365,63 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__item team-card">
-              <img
-                srcset="
-                ./images/team-card2.jpg 1x,
-                ./images/team-card2@2x.jpg 2x
+              <picture>
+                <source
+                srcset="./images/mobile/team-card/team-card2.webp 1x,
+                  ./images/mobile/team-card/team-card2@2x.webp 2x,
+                  ./images/mobile/team-card/team-card2@3x.webp 3x
+               "
+                type="image/webp"
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/team-card/team-card2.webp 1x,
+                  ./images/tablet/team-card/team-card2@2x.webp 2x,
+                  ./images/tablet/team-card/team-card2@3x.webp 3x
                 "
-                src="./images/team-card2.jpg"
+                type="image/webp"
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/team-card/team-card2.webp 1x,
+                  ./images/desktop/team-card/team-card2@2x.webp 2x,
+                  ./images/desktop/team-card/team-card2@3x.webp 3x
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                >
+
+                <source
+                srcset="./images/mobile/team-card/team-card2.jpg 1x,
+                  ./images/mobile/team-card/team-card2@2x.jpg 2x,
+                  ./images/mobile/team-card/team-card2@3x.jpg 3x
+               "
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/team-card/team-card2.jpg 1x,
+                  ./images/tablet/team-card/team-card2@2x.jpg 2x,
+                  ./images/tablet/team-card/team-card2@3x.jpg 3x
+                "
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/team-card/team-card2.jpg 1x,
+                  ./images/desktop/team-card/team-card2@2x.jpg 2x,
+                  ./images/desktop/team-card/team-card2@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+                >
+               
+                <img
+                loading="lazy"
+                src="./images/desktop/team-card/team-card2.jpg
                 alt="Учасник 2"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
+              </picture>
               <div class="team-card__content">
                 <h3 class="team-card__title">Ольга Рєпіна</h3>
                 <p class="team-card__descr" lang="en">Frontend Developer</p>
@@ -335,17 +463,63 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__item team-card">
-              <img
-                srcset="
-                ./images/team-card3.jpg 1x,
-                ./images/team-card3@2x.jpg 2x
+              <picture>
+                <source
+                srcset="./images/mobile/team-card/team-card3.webp 1x,
+                  ./images/mobile/team-card/team-card3@2x.webp 2x,
+                  ./images/mobile/team-card/team-card3@3x.webp 3x
+               "
+                type="image/webp"
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/team-card/team-card3.webp 1x,
+                  ./images/tablet/team-card/team-card3@2x.webp 2x,
+                  ./images/tablet/team-card/team-card3@3x.webp 3x
                 "
-                src="./images/team-card3.jpg"
+                type="image/webp"
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/team-card/team-card3.webp 1x,
+                  ./images/desktop/team-card/team-card3@2x.webp 2x,
+                  ./images/desktop/team-card/team-card3@3x.webp 3x
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                >
+
+                <source
+                srcset="./images/mobile/team-card/team-card3.jpg 1x,
+                  ./images/mobile/team-card/team-card3@2x.jpg 2x,
+                  ./images/mobile/team-card/team-card3@3x.jpg 3x
+               "
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/team-card/team-card3.jpg 1x,
+                  ./images/tablet/team-card/team-card3@2x.jpg 2x,
+                  ./images/tablet/team-card/team-card3@3x.jpg 3x
+                "
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/team-card/team-card3.jpg 1x,
+                  ./images/desktop/team-card/team-card3@2x.jpg 2x,
+                  ./images/desktop/team-card/team-card3@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+                >
+               
+                <img
+                loading="lazy"
+                src="./images/desktop/team-card/team-card3.jpg
                 alt="Учасник 3"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
+              </picture>
               <div class="team-card__content">
                 <h3 class="team-card__title">Микола Тарасов</h3>
                 <p class="team-card__descr" lang="en">Marketing</p>
@@ -387,17 +561,63 @@
                 </ul>
               </div>
             </li>
+
             <li class="team__item team-card">
-              <img
-                srcset="
-                ./images/team-card4.jpg 1x,
-                ./images/team-card4@2x.jpg 2x
+              <picture>
+                <source
+                srcset="./images/mobile/team-card/team-card4.webp 1x,
+                  ./images/mobile/team-card/team-card4@2x.webp 2x,
+                  ./images/mobile/team-card/team-card4@3x.webp 3x
+               "
+                type="image/webp"
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/team-card/team-card4.webp 1x,
+                  ./images/tablet/team-card/team-card4@2x.webp 2x,
+                  ./images/tablet/team-card/team-card4@3x.webp 3x
                 "
-                src="./images/team-card4.jpg"
+                type="image/webp"
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/team-card/team-card4.webp 1x,
+                  ./images/desktop/team-card/team-card4@2x.webp 2x,
+                  ./images/desktop/team-card/team-card4@3x.webp 3x
+                "
+                type="image/webp"
+                media="(min-width: 1200px)"
+                >
+
+                <source
+                srcset="./images/mobile/team-card/team-card4.jpg 1x,
+                  ./images/mobile/team-card/team-card4@2x.jpg 2x,
+                  ./images/mobile/team-card/team-card4@3x.jpg 3x
+               "
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/team-card/team-card4.jpg 1x,
+                  ./images/tablet/team-card/team-card4@2x.jpg 2x,
+                  ./images/tablet/team-card/team-card4@3x.jpg 3x
+                "
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/team-card/team-card4.jpg 1x,
+                  ./images/desktop/team-card/team-card4@2x.jpg 2x,
+                  ./images/desktop/team-card/team-card4@3x.jpg 3x
+                "
+                media="(min-width: 1200px)"
+                >
+               
+                <img
+                loading="lazy"
+                src="./images/desktop/team-card/team-card4.jpg
                 alt="Учасник 4"
-                width="270"
-                height="260"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
+              </picture>
               <div class="team-card__content">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
                 <p class="team-card__descr" lang="en">UI Designer</p>

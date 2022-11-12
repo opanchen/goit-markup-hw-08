@@ -1,7 +1,6 @@
 // * Directions styles:
 
 .directions {
-  @extend %list;
   display:none;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -27,9 +26,10 @@
   gap: 30px;
 }
 
-//    .directions__item {
-//     outline: 1px dashed teal;
-//   } 
+   .directions__item {
+    @extend %list;
+    // outline: 1px dashed teal;
+  } 
   
 .directions__thumb {
   position: relative;

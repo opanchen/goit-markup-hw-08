@@ -18,8 +18,8 @@
     visibility 250ms $transition-cubic;
     background-color: rgba(0, 0, 0, 0.2);
     
-    @media screen and (max-width: 767px) {
-      padding: 93px 15px 94px 15px;
+    @media screen and (max-width: 479px) {
+      padding: 20px 15px;
     }
 
   }
@@ -36,20 +36,18 @@
   
   .modal {
     position: relative;
-   
+
     padding: 40px;
-    width: auto;
-    height: auto;
     border-radius: 4px;
   
     background-color: $color-white-primary;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
       position: absolute;
-      top: 50%;
+      top: 20px;
       left: 50%;
-      transform: translate(-50%, -50%) scale(1);
+      transform: translateX(-50%,) scale(1);
       transition: transform 250ms $transition-cubic;
 
       width: 450px;
@@ -57,6 +55,10 @@
     }
 
     @media screen and (min-width: 1200px) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      transition: transform 250ms $transition-cubic;
       width: 528px;
       height: 581px;
     }

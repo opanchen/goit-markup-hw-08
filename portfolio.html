@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
     
 </head>
@@ -102,15 +102,65 @@
   </ul>
   <!-- Links to projects: -->
   <ul class="projects__list">
+
       <li class="projects__item product">
           <a href="#" class="product__link">
              <div class="product__thumb">
-              <img class="product__image"
-              srcset="
-              ./images/macbook-screan.jpg 1x,
-              ./images/macbook-screan@2x.jpg 2x
-              "
-              src="./images/macbook-screan.jpg" alt="Сторінка сайту Технокряк" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/mobile/project-card/macbook-screan.webp 1x,
+                  ./images/mobile/project-card/macbook-screan@2x.webp 2x,
+                  ./images/mobile/project-card/macbook-screan@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/project-card/macbook-screan.webp 1x,
+                  ./images/tablet/project-card/macbook-screan@2x.webp 2x,
+                  ./images/tablet/project-card/macbook-screan@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/project-card/macbook-screan.webp 1x,
+                  ./images/desktop/project-card/macbook-screan@2x.webp 2x,
+                  ./images/desktop/project-card/macbook-screan@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(min-width: 1200px)"
+                >
+                
+                <source
+                srcset="./images/mobile/project-card/macbook-screan.jpg 1x,
+                  ./images/mobile/project-card/macbook-screan@2x.jpg 2x,
+                  ./images/mobile/project-card/macbook-screan@3x.jpg 3x
+               "
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/project-card/macbook-screan.jpg 1x,
+                  ./images/tablet/project-card/macbook-screan@2x.jpg 2x,
+                  ./images/tablet/project-card/macbook-screan@3x.jpg 3x
+               " 
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/project-card/macbook-screan.jpg 1x,
+                  ./images/desktop/project-card/macbook-screan@2x.jpg 2x,
+                  ./images/desktop/project-card/macbook-screan@3x.jpg 3x
+               "
+                media="(min-width: 1200px)"
+                >
+
+                <img class="product__image"
+                loading="lazy"
+                src="./images/desktop/project-card/macbook-screan.jpg" 
+                alt="Сторінка сайту Технокряк" 
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                >
+              </picture>
               <div class="product__overlay">
                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div> 
@@ -119,18 +169,67 @@
                 <h2 class="product__title">Технокряк</h2>
               <p class="product__descr">Веб-сайт</p>
               </div>
-              
           </a>
       </li>
+
       <li class="projects__item product">
           <a href="#" class="product__link">
               <div class="product__thumb">
-                <img class="product__image"
-                srcset="
-                ./images/match-poster.jpg 1x,
-                ./images/match-poster@2x.jpg 2x
-                "
-                src="./images/match-poster.jpg" alt="Афіша баскетбольного матчу" width="370" height="294">
+                <picture>
+                  <source
+                  srcset="./images/mobile/project-card/match-poster.webp 1x,
+                    ./images/mobile/project-card/match-poster@2x.webp 2x,
+                    ./images/mobile/project-card/match-poster@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/match-poster.webp 1x,
+                    ./images/tablet/project-card/match-poster@2x.webp 2x,
+                    ./images/tablet/project-card/match-poster@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/match-poster.webp 1x,
+                    ./images/desktop/project-card/match-poster@2x.webp 2x,
+                    ./images/desktop/project-card/match-poster@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(min-width: 1200px)"
+                  >
+                  
+                  <source
+                  srcset="./images/mobile/project-card/match-poster.jpg 1x,
+                    ./images/mobile/project-card/match-poster@2x.jpg 2x,
+                    ./images/mobile/project-card/match-poster@3x.jpg 3x
+                 "
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/match-poster.jpg 1x,
+                    ./images/tablet/project-card/match-poster@2x.jpg 2x,
+                    ./images/tablet/project-card/match-poster@3x.jpg 3x
+                 " 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/match-poster.jpg 1x,
+                    ./images/desktop/project-card/match-poster@2x.jpg 2x,
+                    ./images/desktop/project-card/match-poster@3x.jpg 3x
+                 "
+                  media="(min-width: 1200px)"
+                  >
+  
+                  <img class="product__image"
+                  loading="lazy"
+                  src="./images/desktop/project-card/match-poster.jpg" 
+                  alt="Афіша баскетбольного матчу" 
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  >
+                </picture>
               <div class="product__overlay">
                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div> 
@@ -141,15 +240,65 @@
              </div>
           </a>
       </li>
+
       <li class="projects__item product">
           <a href="#" class="product__link">
              <div class="product__thumb">
-              <img class="product__image"
-              srcset="
-              ./images/restaurant-logo.jpg 1x,
-              ./images/restaurant-logo@2x.jpg 2x
-              "
-              src="./images/restaurant-logo.jpg" alt="Логотип ресторану" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/mobile/project-card/restaurant-logo.webp 1x,
+                  ./images/mobile/project-card/restaurant-logo@2x.webp 2x,
+                  ./images/mobile/project-card/restaurant-logo@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/project-card/restaurant-logo.webp 1x,
+                  ./images/tablet/project-card/restaurant-logo@2x.webp 2x,
+                  ./images/tablet/project-card/restaurant-logo@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/project-card/restaurant-logo.webp 1x,
+                  ./images/desktop/project-card/restaurant-logo@2x.webp 2x,
+                  ./images/desktop/project-card/restaurant-logo@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(min-width: 1200px)"
+                >
+                
+                <source
+                srcset="./images/mobile/project-card/restaurant-logo.jpg 1x,
+                  ./images/mobile/project-card/restaurant-logo@2x.jpg 2x,
+                  ./images/mobile/project-card/restaurant-logo@3x.jpg 3x
+               "
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/project-card/restaurant-logo.jpg 1x,
+                  ./images/tablet/project-card/restaurant-logo@2x.jpg 2x,
+                  ./images/tablet/project-card/restaurant-logo@3x.jpg 3x
+               " 
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/project-card/restaurant-logo.jpg 1x,
+                  ./images/desktop/project-card/restaurant-logo@2x.jpg 2x,
+                  ./images/desktop/project-card/restaurant-logo@3x.jpg 3x
+               "
+                media="(min-width: 1200px)"
+                >
+
+                <img class="product__image"
+                loading="lazy"
+                src="./images/desktop/project-card/restaurant-logo.jpg" 
+                alt="Логотип ресторану" 
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                >
+              </picture>
               <div class="product__overlay">
                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div> 
@@ -160,15 +309,65 @@
               </div>
           </a>
       </li>
+
       <li class="projects__item product">
           <a href="#" class="product__link">
               <div class="product__thumb">
-                <img class="product__image"
-                srcset="
-                ./images/headphones.jpg 1x,
-                ./images/headphones@2x.jpg 2x
-                "
-                src="./images/headphones.jpg" alt="Навушники" width="370" height="294">
+                <picture>
+                  <source
+                  srcset="./images/mobile/project-card/headphones.webp 1x,
+                    ./images/mobile/project-card/headphones@2x.webp 2x,
+                    ./images/mobile/project-card/headphones@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/headphones.webp 1x,
+                    ./images/tablet/project-card/headphones@2x.webp 2x,
+                    ./images/tablet/project-card/headphones@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/headphones.webp 1x,
+                    ./images/desktop/project-card/headphones@2x.webp 2x,
+                    ./images/desktop/project-card/headphones@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(min-width: 1200px)"
+                  >
+                  
+                  <source
+                  srcset="./images/mobile/project-card/headphones.jpg 1x,
+                    ./images/mobile/project-card/headphones@2x.jpg 2x,
+                    ./images/mobile/project-card/headphones@3x.jpg 3x
+                 "
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/headphones.jpg 1x,
+                    ./images/tablet/project-card/headphones@2x.jpg 2x,
+                    ./images/tablet/project-card/headphones@3x.jpg 3x
+                 " 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/headphones.jpg 1x,
+                    ./images/desktop/project-card/headphones@2x.jpg 2x,
+                    ./images/desktop/project-card/headphones@3x.jpg 3x
+                 "
+                  media="(min-width: 1200px)"
+                  >
+  
+                  <img class="product__image"
+                  loading="lazy"
+                  src="./images/desktop/project-card/headphones.jpg" 
+                  alt="Навушники" 
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  >
+                </picture>
               <div class="product__overlay">
                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div> 
@@ -179,15 +378,65 @@
               </div>
           </a>
       </li>
+
       <li class="projects__item product">
           <a href="#" class="product__link">
              <div class="product__thumb">
-              <img class="product__image"
-              srcset="
-              ./images/boxes.jpg 1x,
-              ./images/boxes@2x.jpg 2x
-              "
-              src="./images/boxes.jpg" alt="Біла та коричнева коробки" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/mobile/project-card/boxes.webp 1x,
+                  ./images/mobile/project-card/boxes@2x.webp 2x,
+                  ./images/mobile/project-card/boxes@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/project-card/boxes.webp 1x,
+                  ./images/tablet/project-card/boxes@2x.webp 2x,
+                  ./images/tablet/project-card/boxes@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/project-card/boxes.webp 1x,
+                  ./images/desktop/project-card/boxes@2x.webp 2x,
+                  ./images/desktop/project-card/boxes@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(min-width: 1200px)"
+                >
+                
+                <source
+                srcset="./images/mobile/project-card/boxes.jpg 1x,
+                  ./images/mobile/project-card/boxes@2x.jpg 2x,
+                  ./images/mobile/project-card/boxes@3x.jpg 3x
+               "
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/project-card/boxes.jpg 1x,
+                  ./images/tablet/project-card/boxes@2x.jpg 2x,
+                  ./images/tablet/project-card/boxes@3x.jpg 3x
+               " 
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/project-card/boxes.jpg 1x,
+                  ./images/desktop/project-card/boxes@2x.jpg 2x,
+                  ./images/desktop/project-card/boxes@3x.jpg 3x
+               "
+                media="(min-width: 1200px)"
+                >
+
+                <img class="product__image"
+                loading="lazy"
+                src="./images/desktop/project-card/boxes.jpg" 
+                alt="Біла та коричнева коробки" 
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                >
+              </picture>
               <div class="product__overlay">
                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div> 
@@ -198,15 +447,65 @@
              </div>
           </a>
       </li>
+
       <li class="projects__item product">
           <a href="#" class="product__link">
               <div class="product__thumb">
-                <img class="product__image"
-                srcset="
-                ./images/monitor.jpg 1x,
-                ./images/monitor@2x.jpg 2x
-                "
-                src="./images/monitor.jpg" alt="Комп'ютерний монітор" width="370" height="294">
+                <picture>
+                  <source
+                  srcset="./images/mobile/project-card/monitor.webp 1x,
+                    ./images/mobile/project-card/monitor@2x.webp 2x,
+                    ./images/mobile/project-card/monitor@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/monitor.webp 1x,
+                    ./images/tablet/project-card/monitor@2x.webp 2x,
+                    ./images/tablet/project-card/monitor@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/monitor.webp 1x,
+                    ./images/desktop/project-card/monitor@2x.webp 2x,
+                    ./images/desktop/project-card/monitor@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(min-width: 1200px)"
+                  >
+                  
+                  <source
+                  srcset="./images/mobile/project-card/monitor.jpg 1x,
+                    ./images/mobile/project-card/monitor@2x.jpg 2x,
+                    ./images/mobile/project-card/monitor@3x.jpg 3x
+                 "
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/monitor.jpg 1x,
+                    ./images/tablet/project-card/monitor@2x.jpg 2x,
+                    ./images/tablet/project-card/monitor@3x.jpg 3x
+                 " 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/monitor.jpg 1x,
+                    ./images/desktop/project-card/monitor@2x.jpg 2x,
+                    ./images/desktop/project-card/monitor@3x.jpg 3x
+                 "
+                  media="(min-width: 1200px)"
+                  >
+  
+                  <img class="product__image"
+                  loading="lazy"
+                  src="./images/desktop/project-card/monitor.jpg" 
+                  alt="Комп'ютерний монітор" 
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  >
+                </picture>
               <div class="product__overlay">
                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div> 
@@ -217,15 +516,65 @@
             </div>
           </a>
       </li>
+
       <li class="projects__item product">
           <a href="#" class="product__link">
              <div class="product__thumb">
-              <img class="product__image"
-              srcset="
-              ./images/magazine.jpg 1x,
-              ./images/magazine@2x.jpg 2x
-              "
-              src="./images/magazine.jpg" alt="Журнал" width="370" height="294">
+              <picture>
+                <source
+                srcset="./images/mobile/project-card/magazine.webp 1x,
+                  ./images/mobile/project-card/magazine@2x.webp 2x,
+                  ./images/mobile/project-card/magazine@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/project-card/magazine.webp 1x,
+                  ./images/tablet/project-card/magazine@2x.webp 2x,
+                  ./images/tablet/project-card/magazine@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/project-card/magazine.webp 1x,
+                  ./images/desktop/project-card/magazine@2x.webp 2x,
+                  ./images/desktop/project-card/magazine@3x.webp 3x
+               "
+                type="image/webp" 
+                media="(min-width: 1200px)"
+                >
+                
+                <source
+                srcset="./images/mobile/project-card/magazine.jpg 1x,
+                  ./images/mobile/project-card/magazine@2x.jpg 2x,
+                  ./images/mobile/project-card/magazine@3x.jpg 3x
+               "
+                media="(max-width: 767px)"
+                >
+                <source
+                srcset="./images/tablet/project-card/magazine.jpg 1x,
+                  ./images/tablet/project-card/magazine@2x.jpg 2x,
+                  ./images/tablet/project-card/magazine@3x.jpg 3x
+               " 
+                media="(max-width: 1199px)"
+                >
+                <source
+                srcset="./images/desktop/project-card/magazine.jpg 1x,
+                  ./images/desktop/project-card/magazine@2x.jpg 2x,
+                  ./images/desktop/project-card/magazine@3x.jpg 3x
+               "
+                media="(min-width: 1200px)"
+                >
+
+                <img class="product__image"
+                loading="lazy"
+                src="./images/desktop/project-card/magazine.jpg" 
+                alt="Журнал" 
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                >
+              </picture>
               <div class="product__overlay">
                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div> 
@@ -236,15 +585,65 @@
               </div>
           </a>
       </li>
+
       <li class="projects__item product">
           <a href="#" class="product__link">
               <div class="product__thumb">
-                <img class="product__image"
-                srcset="
-                ./images/lab-tag.jpg 1x,
-                ./images/lab-tag@2x.jpg 2x
-                "
-                src="./images/lab-tag.jpg" alt="Товарна бірка" width="370" height="294">
+                <picture>
+                  <source
+                  srcset="./images/mobile/project-card/lab-tag.webp 1x,
+                    ./images/mobile/project-card/lab-tag@2x.webp 2x,
+                    ./images/mobile/project-card/lab-tag@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/lab-tag.webp 1x,
+                    ./images/tablet/project-card/lab-tag@2x.webp 2x,
+                    ./images/tablet/project-card/lab-tag@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/lab-tag.webp 1x,
+                    ./images/desktop/project-card/lab-tag@2x.webp 2x,
+                    ./images/desktop/project-card/lab-tag@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(min-width: 1200px)"
+                  >
+                  
+                  <source
+                  srcset="./images/mobile/project-card/lab-tag.jpg 1x,
+                    ./images/mobile/project-card/lab-tag@2x.jpg 2x,
+                    ./images/mobile/project-card/lab-tag@3x.jpg 3x
+                 "
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/lab-tag.jpg 1x,
+                    ./images/tablet/project-card/lab-tag@2x.jpg 2x,
+                    ./images/tablet/project-card/lab-tag@3x.jpg 3x
+                 " 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/lab-tag.jpg 1x,
+                    ./images/desktop/project-card/lab-tag@2x.jpg 2x,
+                    ./images/desktop/project-card/lab-tag@3x.jpg 3x
+                 "
+                  media="(min-width: 1200px)"
+                  >
+  
+                  <img class="product__image"
+                  loading="lazy"
+                  src="./images/desktop/project-card/lab-tag.jpg" 
+                  alt="Товарна бірка" 
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  >
+                </picture>
               <div class="product__overlay">
                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div> 
@@ -255,15 +654,65 @@
              </div>
           </a>
       </li>
+
       <li class="projects__item product">
           <a href="#" class="product__link">
               <div class="product__thumb">
-                <img class="product__image" 
-                srcset="
-                ./images/laptop.jpg 1x,
-                ./images/laptop@2x.jpg 2x
-                "
-                src="./images/laptop.jpg" alt="Ноутбук" width="370" height="294">
+                <picture>
+                  <source
+                  srcset="./images/mobile/project-card/laptop.webp 1x,
+                    ./images/mobile/project-card/laptop@2x.webp 2x,
+                    ./images/mobile/project-card/laptop@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/laptop.webp 1x,
+                    ./images/tablet/project-card/laptop@2x.webp 2x,
+                    ./images/tablet/project-card/laptop@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/laptop.webp 1x,
+                    ./images/desktop/project-card/laptop@2x.webp 2x,
+                    ./images/desktop/project-card/laptop@3x.webp 3x
+                 "
+                  type="image/webp" 
+                  media="(min-width: 1200px)"
+                  >
+                  
+                  <source
+                  srcset="./images/mobile/project-card/laptop.jpg 1x,
+                    ./images/mobile/project-card/laptop@2x.jpg 2x,
+                    ./images/mobile/project-card/laptop@3x.jpg 3x
+                 "
+                  media="(max-width: 767px)"
+                  >
+                  <source
+                  srcset="./images/tablet/project-card/laptop.jpg 1x,
+                    ./images/tablet/project-card/laptop@2x.jpg 2x,
+                    ./images/tablet/project-card/laptop@3x.jpg 3x
+                 " 
+                  media="(max-width: 1199px)"
+                  >
+                  <source
+                  srcset="./images/desktop/project-card/laptop.jpg 1x,
+                    ./images/desktop/project-card/laptop@2x.jpg 2x,
+                    ./images/desktop/project-card/laptop@3x.jpg 3x
+                 "
+                  media="(min-width: 1200px)"
+                  >
+  
+                  <img class="product__image"
+                  loading="lazy"
+                  src="./images/desktop/project-card/laptop.jpg" 
+                  alt="Ноутбук" 
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  >
+                </picture>
               <div class="product__overlay">
                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div> 
