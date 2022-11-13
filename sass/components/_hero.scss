@@ -3,7 +3,8 @@
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 768px;
-  height: 400px;
+  // ментор сказав прибрати при перевірці дз
+  // height: 400px;
 
   text-align: center;
   background-color: $color-bg-footer;
@@ -25,7 +26,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 600px;
+    // ментор сказав прибрати при перевірці дз
+    // height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
